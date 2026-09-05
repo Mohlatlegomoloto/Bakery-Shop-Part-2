@@ -1,0 +1,364 @@
+/* ========================================
+   BAKERY SHOP WEBSITE
+   PART 2 - CSS STYLING
+======================================== */
+
+
+/* ========================================
+   CSS RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   BASE STYLES
+======================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #fff8f0;
+    color: #3d2a20;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ========================================
+   TYPOGRAPHY
+======================================== */
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+    color: #5a321d;
+}
+
+
+h1 {
+    font-size: 3rem;
+}
+
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+header {
+    background-color: #5a321d;
+    color: white;
+    padding: 1rem 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+
+header h1 {
+    color: white;
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 1rem;
+
+    flex-wrap: wrap;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.3rem;
+
+    transition: 0.3s;
+}
+
+
+/* Hover and Focus Pseudo-Classes */
+
+nav a:hover,
+nav a:focus {
+    background-color: #c98b45;
+}
+
+
+/* Active Pseudo-Class */
+
+nav a:active {
+    transform: scale(0.95);
+}
+
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+/* ========================================
+   SECTIONS
+======================================== */
+
+section {
+    padding: 4rem 0;
+}
+
+
+/* ========================================
+   HOME SECTION
+======================================== */
+
+#home {
+    text-align: center;
+    background-color: #f3e1d0;
+
+    padding: 5rem 2rem;
+
+    border-radius: 0.5rem;
+
+    margin-top: 2rem;
+}
+
+
+/* ========================================
+   PRODUCTS SECTION
+======================================== */
+
+.product-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 2rem;
+}
+
+
+.product-card {
+    background-color: white;
+
+    padding: 2rem;
+
+    border: 1px solid #e5d4c4;
+    border-radius: 0.5rem;
+
+    box-shadow:
+        0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+
+/* Product Card Hover */
+
+.product-card:hover {
+    transform: translateY(-0.5rem);
+
+    box-shadow:
+        0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+
+/* ========================================
+   ABOUT SECTION
+======================================== */
+
+#about {
+    background-color: white;
+
+    padding: 3rem 2rem;
+
+    border-left:
+        0.4rem solid #c98b45;
+}
+
+
+/* ========================================
+   CONTACT SECTION
+======================================== */
+
+#contact {
+    background-color: #f3e1d0;
+
+    padding: 3rem 2rem;
+
+    border-radius: 0.5rem;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    background-color: #2e1b12;
+    color: white;
+
+    text-align: center;
+
+    padding: 1.5rem;
+
+    margin-top: 2rem;
+}
+
+
+/* ========================================
+   TABLET RESPONSIVE DESIGN
+   Screens 1024px and below
+======================================== */
+
+@media (max-width: 1024px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .product-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVE DESIGN
+   Screens 768px and below
+======================================== */
+
+@media (max-width: 768px) {
+    .product-card {
+    background-color: #ffffff;
+    border: 1px solid #e6d5c5;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+}
+
+/* ========================================
+   SMALL MOBILE DEVICES
+   Screens 480px and below
+======================================== */
+
+@media (max-width: 480px) {
+
+    nav ul {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    nav a {
+        display: block;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    #home {
+        padding: 3rem 1rem;
+    }
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e6d5c5;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+    h1 {
+        font-size: 2rem;
+    }
+
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+}
+/* =========================================
+   INTERACTIVE LINK STYLES
+   ========================================= */
+
+nav a:hover {
+    color: #8b4513;
+    text-decoration: underline;
+}
+
+nav a:focus {
+    outline: 2px solid #8b4513;
+    outline-offset: 3px;
+}
+
+nav a:active {
+    color: #5c2f0a;
+}
