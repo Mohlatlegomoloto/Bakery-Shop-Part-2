@@ -8,94 +8,552 @@
     <title>Bakery Shop</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcdnjs.cloudflare.com%2Fajax%2Flibs%2Ffont-awesome%2F6.5.1%2Fcss%2Fall.min.css&data=05%7C02%7Cst10473262%40rcconnect.edu.za%7C367320b3f0f341f639e908df0ba1f035%7Ce10c8f44f469448fbc0dd781288ff01b%7C0%7C0%7C639242462333177660%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=5gALG8VCngA2bGQfZ6fSgxey4VUuY2DRR4%2FrForCitE%3D&reserved=0">
 </head>
 
 <body>
 
+    <!-- ================= HEADER ================= -->
+
     <header>
-        <h1>Bakery Shop</h1>
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-bread-slice"></i>
+            </div>
+
+            <div>
+                <h1>Bakery Shop</h1>
+                <p>✦ Freshly baked with love ✦</p>
+            </div>
+
+        </div>
+
 
         <nav>
-            <ul>
-                <li>
-                    <a href="#home">Home</a>
-                </li>
 
-                <li>
-                    <a href="#products">Products</a>
-                </li>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#deals">Special Deals</a>
+            <a href="#order">Order Now</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
 
-                <li>
-                    <a href="#about">About Us</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
         </nav>
+
     </header>
 
 
+    <!-- ================= MAIN ================= -->
+
     <main>
 
-        <section id="home">
-            <h2>Welcome to Our Bakery</h2>
 
-            <p>
-                Welcome to our bakery, where we create fresh and delicious
-                baked goods for our customers.
-            </p>
+        <!-- ================= HOME ================= -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-text">
+
+                <h2>Welcome to Our Bakery</h2>
+
+                <p>
+                    Welcome to our bakery, where we create fresh and delicious
+                    baked goods for our customers.
+                </p>
+
+                <a href="#order" class="hero-btn">
+                    Order Now
+                </a>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img src="images/bakeryn.jpg" alt="Fresh Bakery Products">
+
+            </div>
+
         </section>
 
-        <section id="products">
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section id="products" class="products-section">
 
             <h2>Our Products</h2>
 
-            <div class="product-container">
 
-                <article class="product-card">
+            <div class="products-container">
 
-                    <h3>Fresh Bread</h3>
 
-                    <img src="images/bread.JPG" alt="Freshly baked bread>"
+                <!-- BREAD -->
 
-                    <p>
-                        Freshly baked bread made with quality ingredients.
-                    </p>
+                <div class="product-card">
 
-                </article>
+                    <img src="images/bread.jpg" alt="Fresh Bread">
 
-                <article class="product-card">
+                    <div class="product-info">
 
-                    <h3>Cakes</h3>
+                        <h3>Fresh Bread</h3>
 
-                    <img src="images/cakes.JPG" alt="Freshly baked cakes">
+                        <p>
+                            A variety of freshly baked breads
+                            made daily.
+                        </p>
 
-                    <p>
-                        Delicious cakes for birthdays and special occasions.
-                    </p>
+                        <h4>From R15.00</h4>
 
-                </article>
+                        <a href="#order" class="small-order-btn">
+                            Order Now
+                        </a>
 
-                <article class="product-card">
+                    </div>
 
-                    <h3>Pastries</h3>
+                </div>
 
-                    <img src="images/pastries.JPG" alt="Fresh bakery pastries">
 
-                    <p>
-                        A selection of sweet and freshly prepared pastries.
-                    </p>
 
-                </article>
+                <!-- CAKES -->
+
+                <div class="product-card">
+
+                    <img src="images/cakes.JPG" alt="Delicious Cakes">
+
+                    <div class="product-info">
+
+                        <h3>Cakes</h3>
+
+                        <p>
+                            Delicious cakes for every
+                            celebration and occasion.
+                        </p>
+
+                        <h4>From R120.00</h4>
+
+                        <a href="#order" class="small-order-btn">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PASTRIES -->
+
+                <div class="product-card">
+
+                    <img src="images/pastries.jpg" alt="Fresh Pastries">
+
+                    <div class="product-info">
+
+                        <h3>Pastries</h3>
+
+                        <p>
+                            Sweet and flaky pastries
+                            baked to perfection.
+                        </p>
+
+                        <h4>From R18.00</h4>
+
+                        <a href="#order" class="small-order-btn">
+                            Order Now
+                        </a>
+
+                    </div>
+
+                </div>
 
 
             </div>
 
         </section>
 
-        <section id="about">
+
+
+        <!-- ================= SPECIAL DEALS ================= -->
+
+        <section id="deals" class="deals-section">
+
+
+            <div class="deals-heading">
+
+                <h2>Special Deals</h2>
+
+                <p>
+                    ❧ Don't miss out on our delicious bakery specials! ❧
+                </p>
+
+            </div>
+
+
+
+            <div class="deals-container">
+
+
+                <!-- MORNING SPECIAL -->
+
+                <div class="deal-card">
+
+                    <img src="images/morning-special.jpg"
+                        alt="Morning Special">
+
+                    <div class="deal-info">
+
+                        <h3>Morning<br>Special</h3>
+
+                        <p>
+                            Coffee +<br>
+                            Croissant
+                        </p>
+
+                        <div class="deal-line"></div>
+
+                        <a href="#order" class="deal-button">
+                            Only R45
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CAKE FRIDAY -->
+
+                <div class="deal-card">
+
+                    <img src="images/cake-special.jpg"
+                        alt="Cake Friday">
+
+                    <div class="deal-info">
+
+                        <h3>Cake Friday</h3>
+
+                        <p>
+                            Get 10% OFF<br>
+                            all cakes every<br>
+                            Friday!
+                        </p>
+
+                        <div class="deal-line"></div>
+
+                        <a href="#order" class="deal-button">
+                            10% OFF
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BREAD BUNDLE -->
+
+                <div class="deal-card">
+
+                    <img src="images/bread bundle.jpeg"
+                        alt="Bread Bundle">
+
+                    <div class="deal-info">
+
+                        <h3>Bread Bundle</h3>
+
+                        <p>
+                            Buy 2 loaves<br>
+                            and get 1<br>
+                            FREE!
+                        </p>
+
+                        <div class="deal-line"></div>
+
+                        <a href="#order" class="deal-button">
+                            Special Offer
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CUPCAKE SPECIAL -->
+
+                <div class="deal-card">
+
+                    <img src="images/cupcake-special.jpg" alt="Cupcake Special">
+
+                    <div class="deal-info">
+
+                        <h3>Cupcake<br>Special</h3>
+
+                        <p>
+                            6 cupcakes<br>
+                            for
+                        </p>
+
+                        <div class="deal-line"></div>
+
+                        <a href="#order" class="deal-button">
+                            Only R80
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================= ORDER NOW ================= -->
+
+        <section id="order" class="order-section">
+
+            <div class="order-heading">
+
+                <h2>Place Your Order</h2>
+
+                <p>
+                    Fill in the form below and we will prepare your freshly baked order!
+                </p>
+
+            </div>
+
+
+
+            <div class="order-container">
+
+
+                <form class="order-form">
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your full name"
+                                required>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="+27..."
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="product">
+                                Choose Your Product
+                            </label>
+
+                            <select id="product" required>
+
+                                <option value="">
+                                    -- Select a Product --
+                                </option>
+
+                                <option>Fresh Bread</option>
+
+                                <option>Cake</option>
+
+                                <option>Pastries</option>
+
+                                <option>Morning Special</option>
+
+                                <option>Cake Friday</option>
+
+                                <option>Bread Bundle</option>
+
+                                <option>Cupcake Special</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="quantity">
+                                Quantity
+                            </label>
+
+                            <input
+                                type="number"
+                                id="quantity"
+                                min="1"
+                                value="1"
+                                required>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="date">
+                                Collection / Delivery Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="date"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Order Type
+                        </label>
+
+
+                        <div class="order-options">
+
+                            <label>
+
+                                <input
+                                    type="radio"
+                                    name="order-type"
+                                    value="collection"
+                                    required>
+
+                                Collect from Bakery
+
+                            </label>
+
+
+                            <label>
+
+                                <input
+                                    type="radio"
+                                    name="order-type"
+                                    value="delivery">
+
+                                Home Delivery
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="address">
+                            Delivery Address
+                        </label>
+
+                        <input
+                            type="text"
+                            id="address"
+                            placeholder="Enter your address for delivery">
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Special Instructions
+                        </label>
+
+                        <textarea
+                            id="message"
+                            rows="5"
+                            placeholder="Tell us about any special requests..."></textarea>
+
+                    </div>
+
+
+
+                    <button type="submit" class="place-order-btn">
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                        Place My Order
+
+                    </button>
+
+
+                </form>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="about-section">
 
             <h2>About Us</h2>
 
@@ -106,23 +564,92 @@
 
         </section>
 
-        <section id="contact">
 
-            <h2>Contact Us</h2>
-
-            <p>
-                Contact us to place an order or learn more about our products.
-            </p>
-
-        </section>
 
     </main>
 
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact-section">
+
+
+        <div class="contact-item">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <p>
+                123 Bakery Street<br>
+                Pretoria, South Africa
+            </p>
+
+        </div>
+
+
+
+        <div class="contact-item">
+
+            <i class="fa-solid fa-phone"></i>
+
+            <p>
+                +27 12 345 6789
+            </p>
+
+        </div>
+
+
+
+        <div class="contact-item">
+
+            <i class="fa-regular fa-envelope"></i>
+
+            <p>
+                info@bakeryshop.co.za
+            </p>
+
+        </div>
+
+
+
+        <div class="contact-item">
+
+            <i class="fa-regular fa-clock"></i>
+
+            <p>
+                Mon - Sat: 8:00 AM - 6:00 PM<br>
+                <strong>Sunday:</strong> Closed
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
 
+
         <p>
-            &copy; 2026 Bakery Shop. All Rights Reserved.
+            © 2026 Bakery Shop. All Rights Reserved.
+            <span>♥</span>
+            Fresh bread, cakes and pastries made with love.
         </p>
+
+
+        <div class="social-icons">
+
+            <i class="fa-brands fa-facebook"></i>
+
+            <i class="fa-brands fa-instagram"></i>
+
+            <i class="fa-brands fa-twitter"></i>
+
+        </div>
+
 
     </footer>
 
